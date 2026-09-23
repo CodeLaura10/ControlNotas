@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Control de Notas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del estudiante"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etNota1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 1 (20%)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etNota2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 2 (30%)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etNota3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 3 (15%)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etNota4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 4 (35%)"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar resultado:"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgModo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbPantalla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En pantalla"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbMensaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Como mensaje"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpiar campos después de calcular"
+            android:checked="true" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular nota definitiva"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finalizar grupo" />
+
+        <Button
+            android:id="@+id/btnReiniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvResumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Estudiantes: 0 | Perdieron: 0" />
+
+    </LinearLayout>
+</ScrollView>
